@@ -1,20 +1,22 @@
 import numpy as np
 import matplotlib.pyplot as plt
-import torch
+import random
 
-#Load in the .npy file
-load = np.load(r"classes/full_numpy_bitmap_monkey.npy")
+def show_image():
+    print("crab, crocodile, lion, lobster, octopus, panda, swan")
+    while True:
+        while True:
+            ask = input("What animal would you like to see? ")
+            try:
+                loading = np.load(rf"classes/full_numpy_bitmap_{ask}.npy")
+                break
+            except FileNotFoundError:
+                print("Oops! Invalid class")
+        loaded_image = loading[random.randint(0, len(loading) - 1)]
+        image = loaded_image.reshape(28, 28)
+        plt.imshow(image, cmap='gray')
+        plt.title(ask)
+        plt.axis()  # Turn off axis for better visualization
+        plt.show()
 
-print(load.shape)
-
-# Assuming 'load[100]' is the flattened image
-loaded_image = load[400]
-print(loaded_image.shape)
-# Reshape the flattened vector into a 28x28 image
-image = loaded_image.reshape(28, 28)
-print(image.shape)
-print(image)
-# Display the image
-plt.imshow(image, cmap='gray')
-plt.axis('on')  # Turn off axis for better visualization
-plt.show()
+show_image()
