@@ -4,6 +4,7 @@ WIP to make it a working cloneable repo
 Using CLIP (Contrastive Language-Image Pre-Training) and ViT (Visual Transformers) to predict user drawings from set classes. In this case, I used the labels ("a drawing of a crab", "a drawing of a crocodile", "a drawing of a lion", "a drawing of a lobster", "a drawing of a monkey", "a drawing of an octopus", "a drawing of a panda", "a drawing of a swan"). 
 
 Here's a visual demonstration:
+
 https://github.com/user-attachments/assets/4ac093a3-0fbc-45b8-bdb2-c7043b28391a
 
 
