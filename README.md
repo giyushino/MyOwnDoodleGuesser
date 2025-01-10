@@ -5,7 +5,8 @@ Using CLIP (Contrastive Language-Image Pre-Training) and ViT (Visual Transformer
 
 Here's a visual demonstration:
 
-https://github.com/user-attachments/assets/4ac093a3-0fbc-45b8-bdb2-c7043b28391a
+https://github.com/user-attachments/assets/515a8da0-a107-4e21-a7f5-b8e5ddd6b6b8
+
 
 
 
